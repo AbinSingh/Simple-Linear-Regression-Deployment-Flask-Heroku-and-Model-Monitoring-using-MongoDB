@@ -9,9 +9,8 @@ import json
 import pandas as pd
 
 # connect to the mongoDB cloud
-#connection_url='mongodb+srv://abin:dbpassword@cluster0.b8byd.mongodb.net/test?retryWrites=true&w=majority'
 
-connection_url='mongodb+srv://abin:abin@cluster0.vklmj.mongodb.net/TableDB?retryWrites=true&w=majority'
+# connection_url='mongodb+srv://abin:abin@cluster0.vklmj.mongodb.net/TableDB?retryWrites=true&w=majority'
 
 #connection_url = os.environ.get('MONGODB_URL')
 
@@ -55,4 +54,4 @@ def get_delay():
       
 
 if __name__ == '__main__':
-    app.run(port=5000,debug=True)
+    app.run(debug=True)
