@@ -11,7 +11,7 @@ import pandas as pd
 
 # connection_url='mongodb+srv://abin:abin@cluster0.vklmj.mongodb.net/TableDB?retryWrites=true&w=majority'
 
-#connection_url = os.environ.get('MONGODB_URL')
+connection_url = os.environ.get('MONGODB_URL')
 
 app = Flask(__name__)
 client = pymongo.MongoClient(connection_url)
