@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+body {
+  background-image: url("{{ url_for('static', filename='robot2.jpeg') }}");
+                    
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<title>Salary Prediction App</title>
+
+
+<div align="left">
+
+
+<p style="font-size:150%;">@Hello Human@</p>
+
+<p style="font-size:200%;">Predicted Annual Salary is as below</p>
+
+<!doctype html>
+  <table border = 1>
+    {% for key, value in mydict1.items() %}
+
+    <tr>
+       <th> {{ key }} </th>
+       <td> {{ value }} </td>
+    </tr>
+
+    {% endfor %}
+ </table>
+
+
+</div>
+</body>
+</html>
